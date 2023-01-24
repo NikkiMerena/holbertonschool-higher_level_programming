@@ -1,11 +1,23 @@
 #!/usr/bin/python3
-""" 0-add_integer Module """
+"""
+    Project 0x05 - Test driven development
+    Task 0
+    Adds two integers
+"""
 
 
 def add_integer(a, b=98):
-    """ Addition Function for Integers """
-    if type(a) not in [int, float]:
+    """
+        Function to add two integers together
+    """
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+
+    if type(a) is not int:
         raise TypeError("a must be an integer")
-    if type(b) not in [int, float]:
+    if type(b) is not int:
         raise TypeError("b must be an integer")
-    return int(a) + int(b)
+
+    return (a + b)
