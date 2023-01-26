@@ -1,0 +1,37 @@
+================================
+Testing Through Documentation
+How to use 4-print_square.py
+================================
+reStructuredText file "4-print_square.txt"
+This library is very simple, since it only has one function called
+"print_square()"
+--------------------------------
+First import "print_square" from the "4-print_square" module:
+
+    >>> print_square = __import__('4-print_square').print_square
+
+::
+Function that prints a square with the character #.
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+::
+size must be an integer, otherwise raise a TypeError
+exception with the message size must be an integer
+
+    >>> print_square('x')
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+::
+No argument
+
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
