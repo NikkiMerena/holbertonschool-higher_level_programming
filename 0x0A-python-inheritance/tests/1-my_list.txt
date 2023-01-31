@@ -1,10 +1,3 @@
-================================
-Testing Through Documentation
-"1-my_list.py"
-================================
-reStructuredText file
-"1-my_list.txt"
-________________________________
 First import "MyList" from the "1-my_list" module:
 
     >>> MyList = __import__('1-my_list').MyList
